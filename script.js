@@ -1,6 +1,6 @@
 // Configuration - Replace with your published Google Sheets URLs
-const AUTH_SHEET_URL = 'YOUR_AUTHENTICATE_SHEET_PUBLISHED_URL';
-const ALUMNI_SHEET_URL = 'YOUR_ALUMNI_SHEET_PUBLISHED_URL';
+const AUTH_SHEET_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRiuHWofyQmC1qtJFOjzvQTrplvxnCjHUTbKud5LBMwhX_1AS0afEEbbQNB1XqxkguEvYuyaHFsmYlq/pubhtml';
+const ALUMNI_SHEET_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRiuHWofyQmC1qtJFOjzvQTrplvxnCjHUTbKud5LBMwhX_1AS0afEEbbQNB1XqxkguEvYuyaHFsmYlq/pubhtml';
 
 // Utility functions
 function toUpperCase(str) {
