@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Portal - Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>College Alumni Registration</h1>
+        </header>
+        
+        <div class="form-container">
+            <h2>Step 1: Verify Your Identity</h2>
+            <form id="verifyForm">
+                <div class="form-group">
+                    <label for="regNumber">Registration Number:</label>
+                    <input type="text" id="regNumber" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" required>
+                </div>
+                
+                <button type="submit">Verify</button>
+            </form>
+            
+            <div id="successMessage" class="hidden">
+                <h3>Verification successful! Please set up your login credentials:</h3>
+                <form id="registerForm">
+                    <div class="form-group">
+                        <label for="newEmail">Email:</label>
+                        <input type="email" id="newEmail" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="newPassword">Password:</label>
+                        <input type="password" id="newPassword" required>
+                    </div>
+                    
+                    <button type="submit">Complete Registration</button>
+                </form>
+            </div>
+            
+            <p>Already have an account? <a href="index.html">Login here</a></p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
