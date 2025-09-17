@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Portal - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Alumni Dashboard</h1>
+            <nav>
+                <a href="directory.html">Alumni Directory</a> | 
+                <a href="#" id="logoutBtn">Logout</a>
+            </nav>
+        </header>
+        
+        <div class="form-container">
+            <h2>Update Your Alumni Profile</h2>
+            <form id="profileForm">
+                <div class="form-group">
+                    <label for="batch">Batch: <span class="required">*</span></label>
+                    <select id="batch" required>
+                        <option value="">Select Batch</option>
+                        <option value="1994">1994</option>
+                        <option value="1995">1995</option>
+                        <option value="1996">1996</option>
+                        <option value="1997">1997</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="branch">Branch: <span class="required">*</span></label>
+                    <select id="branch" required>
+                        <option value="">Select Branch</option>
+                        <option value="EEE">EEE</option>
+                        <option value="ECE">ECE</option>
+                        <option value="CSE">CSE</option>
+                        <option value="Mech">Mech</option>
+                        <option value="Civil">Civil</option>
+                        <option value="Others">Others</option>
+                    </select>
+                    <input type="text" id="otherBranch" class="hidden" placeholder="Specify other branch">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email ID: <span class="required">*</span></label>
+                    <input type="email" id="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone number:</label>
+                    <input type="tel" id="phone">
+                </div>
+                
+                <div class="form-group">
+                    <label for="image">Recent Image (max 1MB):</label>
+                    <input type="file" id="image" accept="image/*">
+                </div>
+                
+                <div class="form-group">
+                    <label for="designation">Current Designation: <span class="required">*</span></label>
+                    <input type="text" id="designation" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="employer">Current Employer: <span class="required">*</span></label>
+                    <input type="text" id="employer" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="areaOfWork">Area of Work Experience: <span class="required">*</span></label>
+                    <input type="text" id="areaOfWork" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="linkedin">LinkedIn Profile: <span class="required">*</span></label>
+                    <input type="url" id="linkedin" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="contributions">How you can contribute: <span class="required">*</span></label>
+                    <select id="contributions" multiple required>
+                        <option value="Job Referrals">Job Referrals</option>
+                        <option value="Train on technologies">Train on technologies</option>
+                        <option value="Career Guidance">Career Guidance</option>
+                        <option value="Financial Planning">Financial Planning</option>
+                        <option value="Other">Other (please specify in notes)</option>
+                    </select>
+                    <small>Hold Ctrl/Cmd to select multiple options</small>
+                </div>
+                
+                <button type="submit">Update Profile</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
